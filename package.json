@@ -4,7 +4,9 @@
   "description": "Utility to read CSV data, transform it and then stream it to another CSV",
   "main": "mask.js",
   "scripts": {
-    "test": "npm run test"
+    "preinstall" : "mkdir -p output",
+    "test": "node mask.js test.csv",
+    "postinstall" : "npm run test"
   },
   "author": "",
   "license": "ISC",
