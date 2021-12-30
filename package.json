@@ -1,0 +1,17 @@
+{
+  "name": "csv-masker",
+  "version": "1.0.0",
+  "description": "Utility to read CSV data, transform it and then stream it to another CSV",
+  "main": "mask.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fast-csv/format": "^4.3.5",
+    "@fast-csv/parse": "^4.3.6",
+    "fast-csv": "^4.3.6",
+    "randomstring": "^1.2.1"
+  }
+}
