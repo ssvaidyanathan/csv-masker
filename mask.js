@@ -23,7 +23,7 @@ parseStream(inputStream, { headers: true , skipRows: 0, ignoreEmpty: true})
         // do some heavy work
         for (var key of Object.keys(row)) {
             //console.log(key + " -> " + row[key] +  " -> "+ row[key].length);
-            if(key && key.toUpperCase()!=="ID" && row[key]!="")
+            if(key && key.toUpperCase()!=="ID" && row[key]!="") //condition to ignore the ID column and empty rows
                 row[key] = randomstring.generate(15); //random string set to 15 characters
         }
         newRows.push(row);
